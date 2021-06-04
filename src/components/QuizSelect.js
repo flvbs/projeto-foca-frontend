@@ -92,6 +92,15 @@ export const QuizSelect = () => {
                     >
                         Iniciar Teste
                     </Button>
+                    <Button
+                        fullWidth
+                        variant="contained"
+                        color="primary"
+                        href="http://localhost:3000/plano_estudo"
+                        className={classes.Button}
+                    >
+                        Visualizar plano de estudos
+                    </Button>
                 </Grid>
             </Container>
             <Footer />
