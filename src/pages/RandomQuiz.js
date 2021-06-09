@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ConnectApi from "../api/ConnectApi";
-import Header from "./framework/Header";
-import Footer from "./framework/Footer";
+import Header from "../components/framework/Header";
+import Footer from "../components/framework/Footer";
 
 // MaterialUI
 import Button from "@material-ui/core/Button";
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const PlanoEstudo = () => {
+export const RandomQuiz = () => {
   const classes = useStyles();
   const { topic } = useParams();
   const API_URL = "http://localhost:8000/quiz/r/" + topic;
@@ -157,4 +157,4 @@ export const PlanoEstudo = () => {
   );
 };
 
-export default PlanoEstudo;
+export default RandomQuiz;

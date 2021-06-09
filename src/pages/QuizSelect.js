@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "./framework/Header"
-import Footer from "./framework/Footer"
+import Header from "../components/framework/Header";
+import Footer from "../components/framework/Footer";
 import ConnectApi from "../api/ConnectApi"
 
 // MaterialUI
