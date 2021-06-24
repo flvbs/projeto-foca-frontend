@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container { 
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* --------------------------------- Component CurrentTask --------------------------------- */
+
+.current-task__countdown {
+  background: none;
+  line-height: 1;
+  font-size: 8vw;
+  color: #552583;
+}
+.onBreakingMode .current-task__countdown {
+  color: #00a7ff;
+}
+@media screen and (min-width: 1400px) {
+  .current-task__countdown {
+    font-size: 8rem;
+ }
+}
+.current-task__tomatos {
+  margin-top: 0.5rem;
+}
+.current-task__tomato {
+  max-width: 1.125rem;
+  margin-right: 0.1875rem;
+}
+/* --------------------------------- Component Timer --------------------------------- */
+.timer {
+  width: 100%;
+  margin-top: 12%;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.timer__reset {
+  width: 4.5%;
+  height: 4.5%;
+}
+.timer__reset-btn {
+  width: 100%;
+  height: 100%;
+  transform: rotate(0);
+  background-color: #552583;
+  border: none;
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.timer__reset-btn:hover {
+  transform: rotate(720deg);
+}
+
+/* --------------------------------- Component TimerButtons --------------------------------- */
+.timer__play-btn, .timer__pause-btn {
+  transform: scale(1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color:#552583;
+  background: none;
+}
+
+.timer__play-btn {
+  animation: heartBeat 3s ease-in-out infinite;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+ }
+  7% {
+    transform: scale(1.1);
+ }
+  14% {
+    transform: scale(1);
+ }
+  21% {
+    transform: scale(1.1);
+ }
+  35% {
+    transform: scale(1);
+ }
+}

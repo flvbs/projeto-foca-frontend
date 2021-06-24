@@ -83,6 +83,7 @@ export default function SignInSide() {
               name="email"
               autoComplete="email"
               autoFocus
+              value="convidadx@email.com"
             />
             <TextField
               variant="outlined"
@@ -94,17 +95,19 @@ export default function SignInSide() {
               type="password"
               id="password"
               autoComplete="current-password"
+              value="12345678"
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Lembrar de mim"
             />
             <Button
-              type="submit"
+              //type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
+              href="/plano_estudo"
             >
               Entrar
             </Button>
