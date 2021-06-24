@@ -30,7 +30,7 @@ html {
 }
 @media screen and (min-width: 1400px) {
   .current-task__countdown {
-    font-size: 8rem;
+    font-size: 4rem;
  }
 }
 .current-task__tomatos {

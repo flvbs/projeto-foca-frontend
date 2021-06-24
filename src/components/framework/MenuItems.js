@@ -62,8 +62,8 @@ export default function MenuItems() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Minha conta</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
     </Menu>
   );
 
