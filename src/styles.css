@@ -43,8 +43,8 @@ html {
 /* --------------------------------- Component Timer --------------------------------- */
 .timer {
   width: 100%;
-  margin-top: 12%;
-  margin-left: 2.5rem;
+  margin-top: 20%;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: row;
 }

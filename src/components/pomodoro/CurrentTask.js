@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tomatoes from './Tomatoes';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 
 class CurrentTask extends Component {
   render() {
@@ -18,6 +19,7 @@ class CurrentTask extends Component {
           <div className="current-task__content-wrapper">
             <h2 className="current-task__name">{defaultTask}</h2>
             <div className="current-task__tomatoes">
+              <RadioButtonUncheckedIcon style={{ color:"#fff" }}/>
               {Array(tomatoes)
                 .fill('X')
                 .map((tomato, i) => (

@@ -13,7 +13,7 @@ const TimerButtons = props => {
           title="Pausar contador"
           onClick={() => stopTimer()}
         >
-         <PauseCircleFilledIcon style={{ fontSize: 60 }}/>
+         <PauseCircleFilledIcon style={{ fontSize: 50 }}/>
         </button>
       ) : (
         <button
@@ -21,7 +21,7 @@ const TimerButtons = props => {
           title="Iniciar contador"
           onClick={() => startTimer()}
         >
-          <PlayCircleFilledIcon style={{ fontSize: 60 }}/>
+          <PlayCircleFilledIcon style={{ fontSize: 50 }}/>
         </button>
       )}
     </>

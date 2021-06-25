@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/framework/Header";
 import Editor from "../components/Editor";
 import TabelaEstudos from "../components/TabelaEstudos";
+import BlueCard from "../components/dashboard/cards/BlueCard";
+import ErrosAcertos from "../components/dashboard/cards/ErrosAcertos";
 
 // MaterialUI
 import Container from "@material-ui/core/Container";
@@ -9,16 +11,25 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
-  titulo: {
+  container: {
     marginTop: theme.spacing(16),
+  },
+  titulo: {
+    marginTop: theme.spacing(8),
   },
   titulo2: {
     marginBottom: theme.spacing(2),
   },
-  tabela: {
+  linha1: {
     marginTop: theme.spacing(6),
     display: "flex",
     flexDirection: "row",
+  },
+  linha2: {
+    marginTop: theme.spacing(6),
+    display: "flex",
+    flexDirection: "row",
+    paddingBottom: 80,
   },
   tabelaEstudos: {
     paddingRight: 55,
@@ -34,7 +45,13 @@ export const PlanoEstudo = () => {
   return (
     <React.Fragment>
       <Header />
-      <Container component="main" maxWidth="lg">
+      <Container className={classes.container} component="main" maxWidth="lg">
+      <div className={classes.linha1}>
+        <div className={classes.tabelaEstudos}>
+          <BlueCard/>
+        </div>
+        <ErrosAcertos/>
+      </div>
       <Typography className={classes.titulo}
                     component="h2"
                     variant="h3"
@@ -42,7 +59,7 @@ export const PlanoEstudo = () => {
                 >
                     Plano de estudos
                 </Typography>
-        <div className={classes.tabela}>
+        <div className={classes.linha2}>
           <div className={classes.tabelaEstudos}>
           <Typography className={classes.titulo2}
                     component="h4"
