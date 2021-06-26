@@ -14,7 +14,6 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import StarIcon from '@material-ui/icons/StarBorder';
 
-import MenuItems from '../components/framework/MenuItems'
 import Footer from "../components/framework/Footer";
 
 function Copyright() {
@@ -126,7 +125,6 @@ export default function Home() {
           <Typography variant="h6" color="inherit" noWrap>
             FOCA
           </Typography>
-          <MenuItems />
         </Toolbar>
       </AppBar>
       <main>

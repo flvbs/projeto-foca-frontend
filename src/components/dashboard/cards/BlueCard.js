@@ -30,7 +30,7 @@ export default props => {
       </div>
       <div className={classes.button}>
             <h3 className="bd-highlight w-100 font-weight-bold">
-            <Button disableElevation variant="contained" color="primary" href="/teste">
+            <Button disableElevation variant="contained" color="primary" href="/teste_nivelamento">
               Fazer teste de nivelamento
             </Button>
             </h3>

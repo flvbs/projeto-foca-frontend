@@ -6,10 +6,21 @@ import PlanoEstudo from "./pages/PlanoEstudo"
 import Login from "./pages/Login"
 import Cadastrar from "./pages/Cadastrar"
 import Home from "./pages/Home"
+import IniciarQuiz from './pages/IniciarQuiz'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Archivo',
+      'sans-serif'
+    ].join(','),
+  },});
 
 function App() {
   return (
-    <Router>
+    <ThemeProvider theme={theme}>
+      <Router>
       <Switch>
       <Route path="/" component={Home} exact/>
         <Route path="/login" component={Login} exact/>
@@ -17,8 +28,10 @@ function App() {
         <Route path="/teste" component={QuizSelect} exact/>
         <Route path="/r/:topic" component={RandomQuiz} exact/>
         <Route path="/plano_estudo" component={PlanoEstudo} exact/>
+        <Route path="/teste_nivelamento" component={IniciarQuiz} exact/>
       </Switch>
     </Router>
+    </ThemeProvider>
   );
 }
 

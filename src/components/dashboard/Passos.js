@@ -7,7 +7,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import StepContent from '@material-ui/core/StepContent';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Pomodoro from './pomodoro/Pomodoro';
+import Pomodoro from '../pomodoro/Pomodoro';
 
 const useStyles = makeStyles((theme) => ({
   root: {

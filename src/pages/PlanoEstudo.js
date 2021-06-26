@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/framework/Header";
-import Editor from "../components/Editor";
-import TabelaEstudos from "../components/TabelaEstudos";
+import Editor from "../components/dashboard/Editor"
+import TabelaEstudos from "../components/dashboard/TabelaEstudos";
 import BlueCard from "../components/dashboard/cards/BlueCard";
 import ErrosAcertos from "../components/dashboard/cards/ErrosAcertos";
 

@@ -49,7 +49,7 @@ export default props => {
       <CardContent style={{backgroundColor: "#fff"}}>
 
         <div className={classes.tabela}>
-          <h3 className="bd-highlight w-100 font-weight-bold">Desempenho 📈</h3>
+          <h3 className="bd-highlight w-100 font-weight-bold">Seu desempenho 📈</h3>
         </div>
         <hr />
         <div className={classes.errosAcertos}>
