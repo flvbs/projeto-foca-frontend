@@ -28,7 +28,7 @@ function App() {
         <Route path="/teste" component={QuizSelect} exact/>
         <Route path="/r/:topic" component={RandomQuiz} exact/>
         <Route path="/plano_estudo" component={PlanoEstudo} exact/>
-        <Route path="/teste_nivelamento" component={IniciarQuiz} exact/>
+        <Route path="/foca" component={IniciarQuiz} exact/>
       </Switch>
     </Router>
     </ThemeProvider>

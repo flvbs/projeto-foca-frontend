@@ -105,6 +105,7 @@ export default function PersistentDrawerLeft() {
       <div className={classes.root}>
       <CssBaseline />
       <AppBar 
+        elevation={0}
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
@@ -158,7 +159,7 @@ export default function PersistentDrawerLeft() {
         </List>
         <Divider />
         <List>
-          {['Minha conta', 'Configurações'].map((text, index) => (
+          {['Minha conta', 'Política de privacidade', 'Configurações'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <AccountCircle /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />

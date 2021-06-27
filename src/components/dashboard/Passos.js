@@ -82,6 +82,7 @@ return (
                     Voltar
                   </Button>
                   <Button
+                    disableElevation
                     variant="contained"
                     color="primary"
                     onClick={handleNext}

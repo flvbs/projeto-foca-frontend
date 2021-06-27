@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Paper from '@material-ui/core/Paper';
@@ -41,8 +41,11 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default props => {
-    const classes = useStyles();
+const ErrosAcertos = ({ aproveitamento, acertos, tempo }) => {
+  const classes = useStyles();
+
+  console.log(aproveitamento,acertos,tempo)
+
   return (
     <>
      <Card>
@@ -54,21 +57,21 @@ export default props => {
         <hr />
         <div className={classes.errosAcertos}>
           <Paper elevation={3} className={classes.paper}>
-            <h3>ERROS</h3>
+            <h3>APROVEITAMENTO</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#211f20' }}>
-              <h2 className="bd-highlight w-100 font-weight-bold">21</h2>
+              <h2 className="bd-highlight w-100 font-weight-bold">{aproveitamento}%</h2>
             </div>
           </Paper>
           <Paper elevation={3} className={classes.paper}>
             <h3>ACERTOS</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#ffb20a' }}>
-              <h2 className="bd-highlight w-100 font-weight-bold">34</h2>
+              <h2 className="bd-highlight w-100 font-weight-bold">{acertos}</h2>
             </div>
           </Paper>
           <Paper elevation={3} className={classes.paper}>
-            <h3>HORAS ESTUDADAS</h3>
+            <h3>TEMPO DE PROVA</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#d3d3d5', color: "#222", }}>
-              <h2 className="bd-highlight w-100 font-weight-bold">2</h2> 
+              <h2 className="bd-highlight w-100 font-weight-bold">{tempo}</h2> 
             </div>
           </Paper>
         </div>
@@ -76,4 +79,6 @@ export default props => {
     </Card>
     </>
   );
-};
+}
+
+export default ErrosAcertos;

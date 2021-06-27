@@ -5,7 +5,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 //
 
@@ -34,25 +33,6 @@ function Copyright() {
   );
 }
 
-const footers = [
-  {
-    title: "FOCA",
-    description: ["Equipe", "História", "Fale conosco", "Localização"],
-  },
-  {
-    title: "Serviços",
-    description: [
-      "Teste de nivelamento",
-      "Plano de estudos",
-      "Dashboard do usuário",
-    ],
-  },
-  {
-    title: "Legal",
-    description: ["Política de Privacidade", "Termos de Uso"],
-  },
-];
-
 export default function Header() {
   const classes = useStyles();
 
@@ -60,24 +40,6 @@ export default function Header() {
     <React.Fragment>
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
-        <Grid container spacing={4} justify="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="textPrimary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="textSecondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
         <Box mt={5}>
           <Copyright />
         </Box>

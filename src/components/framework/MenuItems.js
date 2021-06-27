@@ -7,6 +7,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -23,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'none',
     },
+  },
+  link: {
+    textDecoration: 'none',
+    color: '#222'
   },
 }));
 
@@ -63,7 +68,7 @@ export default function MenuItems() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
+      <Link href="/" className={classes.link}><MenuItem>Sair</MenuItem></Link>
     </Menu>
   );
 
@@ -80,7 +85,7 @@ export default function MenuItems() {
     >
       <MenuItem>
         <IconButton aria-label="show 5 new notifications" color="inherit">
-          <Badge badgeContent={5} color="secondary">
+          <Badge badgeContent={0} color="secondary">
             <NotificationsIcon />
           </Badge>
         </IconButton>

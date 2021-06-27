@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Button from '@material-ui/core/Button';
-
 import { formatTime } from '../utils';
+import PlanoEstudo from '../../../pages/PlanoEstudo';
 
 const End = ({ results, data, onReset, onAnswersCheck, time }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
@@ -19,18 +16,19 @@ const End = ({ results, data, onReset, onAnswersCheck, time }) => {
     // eslint-disable-next-line
   }, []);
 
+  const aproveitamento = Math.floor((correctAnswers / data.length) * 100);
+  const tempo = formatTime(time);
+ 
+  console.log(aproveitamento, correctAnswers, tempo);
+
   return(
-    <Card>
-      <CardContent>
-        <div className="content">
-          <h3>Resultados</h3>
-          <p>{correctAnswers} de {data.length}</p>
-          <p><strong>{Math.floor((correctAnswers / data.length) * 100)}%</strong></p>
-          <p><strong>Tempo de duração:</strong> {formatTime(time)}</p>
-          <Button disableElevation variant="contained" color="primary" href="/plano_estudo">Ver dashboard</Button>
+        <div>  
+          <PlanoEstudo
+            acertos={correctAnswers}
+            aproveitamento={aproveitamento}
+            tempo={tempo}
+          />
         </div>
-      </CardContent>
-    </Card>
   );
 }
 

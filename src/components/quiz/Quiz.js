@@ -7,6 +7,7 @@ import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/quiz.json';
 
+
 let interval;
 
 const Quiz = () => {
@@ -57,7 +58,6 @@ const Quiz = () => {
         onAnswersCheck={() => setShowModal(true)}
         time={time}
       />}
-
       {showModal && <Modal 
         onClose={() => setShowModal(false)}
         results={answers}

@@ -11,11 +11,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    marginTop: theme.spacing(16),
-  },
   titulo: {
     marginTop: theme.spacing(8),
+    color: '#552583',
+    fontWeight: 'bold',
   },
   titulo2: {
     marginBottom: theme.spacing(2),
@@ -40,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const PlanoEstudo = () => {
+export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -50,14 +49,18 @@ export const PlanoEstudo = () => {
         <div className={classes.tabelaEstudos}>
           <BlueCard/>
         </div>
-        <ErrosAcertos/>
+        <ErrosAcertos 
+        acertos={acertos}
+        aproveitamento={aproveitamento}
+        tempo={tempo}
+        />
       </div>
       <Typography className={classes.titulo}
-                    component="h2"
-                    variant="h3"
+                    component="p"
+                    variant="h4"
                     align="left"
                 >
-                    Plano de estudos
+                    Seu plano de estudos
                 </Typography>
         <div className={classes.linha2}>
           <div className={classes.tabelaEstudos}>
@@ -76,7 +79,7 @@ export const PlanoEstudo = () => {
                     variant="h5"
                     align="left"
                 >
-                    Minhas anotações:
+                    Anotações:
                 </Typography>
             <div className={classes.editor}>
               <Editor/>
