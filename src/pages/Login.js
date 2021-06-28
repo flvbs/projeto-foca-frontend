@@ -13,7 +13,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Foca from '../components/img/foca-logo_yellow.png';
+import Foca from '../assets/foca-logo_yellow.png';
 
 function Copyright() {
   return (
@@ -107,7 +107,7 @@ export default function SignInSide() {
               variant="contained"
               color="primary"
               className={classes.submit}
-              href="/plano_estudo"
+              href="/inicial"
             >
               Entrar
             </Button>
