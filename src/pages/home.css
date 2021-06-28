@@ -1,0 +1,54 @@
+#page-landing {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: #fff;
+    background: #552583;
+  }
+
+  .logo-container img {
+    height: 15rem;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+  
+  .logo-container h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+  }
+
+  #typewriterText {
+    overflow: hidden;
+    position: relative;
+    width: 18em;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 400ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+   }
+    to {
+        width: 13em;
+   }
+}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+   }
+    to {
+        border-right-color: transparent;
+   }
+}

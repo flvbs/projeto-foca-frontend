@@ -56,19 +56,19 @@ const ErrosAcertos = ({ aproveitamento, acertos, tempo }) => {
         </div>
         <hr />
         <div className={classes.errosAcertos}>
-          <Paper elevation={3} className={classes.paper}>
+          <Paper elevation={0} className={classes.paper}>
             <h3>APROVEITAMENTO</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#211f20' }}>
               <h2 className="bd-highlight w-100 font-weight-bold">{aproveitamento}%</h2>
             </div>
           </Paper>
-          <Paper elevation={3} className={classes.paper}>
+          <Paper elevation={0} className={classes.paper}>
             <h3>ACERTOS</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#ffb20a' }}>
               <h2 className="bd-highlight w-100 font-weight-bold">{acertos}</h2>
             </div>
           </Paper>
-          <Paper elevation={3} className={classes.paper}>
+          <Paper elevation={0} className={classes.paper}>
             <h3>TEMPO DE PROVA</h3>
             <div className={classes.errAce} style={{ backgroundColor: '#d3d3d5', color: "#222", }}>
               <h2 className="bd-highlight w-100 font-weight-bold">{tempo}</h2> 

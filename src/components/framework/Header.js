@@ -129,7 +129,7 @@ export default function PersistentDrawerLeft() {
           
           </Grid>
           <Typography variant="h6" className={classes.foca} >
-            <Link href="/" style={{ textDecoration:'none', color:'#fff' }}>FOCA</Link>
+            <Link href="#" style={{ textDecoration:'none', color:'#fff' }}>FOCA</Link>
           </Typography>
           <MenuItems />
         </Toolbar>

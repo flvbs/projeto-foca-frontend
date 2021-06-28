@@ -1,49 +1,64 @@
 {
     "data": [
       {
-        "question": "What is the capital of Croatia ?",
-        "choices": ["Split", "Osijek", "Zagreb", "Rijeka"],
-        "answer": "Zagreb"
+        "question": "Qual o comprimento da diagonal de um bloco retangular com as seguintes medidas: 5 centímetros de altura, 10 centímetros de comprimento e 6 centímetros de largura ?",
+        "choices": ["11,69 cm","12,69 cm","13,69 cm","14,69 cm","15,69 cm"],
+        "answer": "12,69 cm"
       },
       {
-        "question": "What is the capital of Slovenia ?",
-        "choices": ["Celje", "Ljubljana", "Maribor", "Koper"],
-        "answer": "Ljubljana"
+        "question": "O sistema cardiovascular é formado pelo coração e vasos sanguíneos, sendo essas últimas estruturas responsáveis pela condução do sangue pelo corpo. Entre as alternativas a seguir, marque o nome do vaso responsável por levar o sangue do coração em direção aos tecidos:",
+        "choices": ["veias","vênulas","artérias","linfonodos","capilares"],
+        "answer": "artérias"
       },
       {
-        "question": "What is the capital of Austria ?",
-        "choices": ["Graz", "Salzburg", "Innsbruck", "Vienna"],
-        "answer": "Vienna"
+        "question": "Considerando o triângulo ABC, equilátero, cujo lado mede 10 cm, qual a é medida de sua altura ?",
+        "choices": ["√3","2√3","3√3","5√3","10√3"],
+        "answer": "5√3"
       },
       {
-        "question": "What is the capital of Serbia ?",
-        "choices": ["Belgrade", "Novi Sad", "Niš", "Subotica"],
-        "answer": "Belgrade"
+        "question": "Qual das palavras destacadas a seguir não é um adjetivo ?",
+        "choices": ["A corneta eliminou PARTE da folga.","Os BONS escravos nem sempre são escolhidos.","Na chegada da embarcação há comoção NACIONAL.","As GRANDES fazendas contratam muita força escrava.","Aportarão no dia SEGUINTE."],
+        "answer": "A corneta eliminou PARTE da folga."
       },
       {
-        "question": "What is the capital of Bosnia and Herzegovina ?",
-        "choices": ["Mostar", "Sarajevo", "Banja Luka", "Tuzla"],
-        "answer": "Sarajevo"
+        "question": "Durante uma expedição, um grupo de estudantes perdeu-se de seu guia. Ao longo do dia em que esse grupo estava perdido, sem água e debaixo de sol, os estudantes passaram a sentir cada vez mais sede. Consequentemente, o sistema excretor desses indivíduos teve um acréscimo em um dos seus processos funcionais. Nessa situação, o sistema excretor dos estudantes",
+        "choices": ["aumentou a filtração glomerular.", "produziu maior volume de urina.", "produziu urina com menos ureia.", "produziu urina com maior concentração de sais.", "reduziu a reabsorção de glicose e aminoácidos."],
+        "answer": "produziu urina com maior concentração de sais."
       },
       {
-        "question": "What is the capital of Hungary ?",
-        "choices": ["Zalaegerszeg", "Eger", "Szeged", "Budapest"],
-        "answer": "Budapest"
+        "question": "A retina é a camada que reveste internamente a câmara ocular e é composta por dois tipos de células, os cones e os bastonetes. De acordo com os seus conhecimentos sobre os cones, marque a alternativa incorreta.",
+        "choices": ["Os cones são células menos sensíveis à luz.", "Os cones são estruturas que possuem a capacidade de discriminar diferentes comprimentos de onda, permitindo a visão em cores.", "Há três tipos diferentes de cones no olho humano, sendo que cada um contém um tipo de pigmento.", "Em ambientes poucos iluminados apenas os cones são estimulados."],
+        "answer": "Em ambientes poucos iluminados apenas os cones são estimulados."
       },
       {
-        "question": "What is the capital of Slovakia ?",
-        "choices": ["Košice", "Nitra", "Bratislava", "Poprad"],
-        "answer": "Bratislava"
+        "question": "46,0 g de sódio reagem com 32,0 goxigênio formando peróxido de sódio. Quantos gramas de sódio serão necessários para obter 156 g de peróxido de sódio?46,0 g de sódio reagem com 32,0 goxigênio formando peróxido de sódio. Quantos gramas de sódio serão necessários para obter 156 g de peróxido de sódio ?",
+        "choices": ["23,0", "32,0", "69,0", "78,0", "92,0"],
+        "answer": "92,0"
       },
       {
-        "question": "What is the capital of Romania ?",
-        "choices": ["Bucharest", "Craiova", "Constanta", "Braila"],
-        "answer": "Bucharest"
+        "question": "A América do Sul é um subcontinente localizado na porção mais austral da América. Ao longo da sua extensão latitudinal, ela é cortada pelas seguintes linhas imaginárias:",
+        "choices": ["Linha do Equador e Trópico de Capricórnio.", "Trópico de Câncer e Círculo Polar Ártico.", "Meridiano de Greenwich e Trópico de Capricórnio.", "Trópico de Capricórnio e Trópico de Câncer.","Círculo Polar Ártico e Trópico de Capricórnio."],
+        "answer": "Linha do Equador e Trópico de Capricórnio."
       },
       {
-        "question": "What is the capital of Germany ?",
-        "choices": ["Wolfsburg", "Munich", "Berlin", "Frankfurt"],
-        "answer": "Berlin"
+        "question": "Os vírus são minúsculos 'piratas' biológicos porque invadem as células, saqueiam seus nutrientes e utilizam as reações químicas das mesmas para se reproduzir. Logo em seguida os descendentes dos invasores transmitem-se a outras células, provocando danos devastadores. A estes danos, dá-se o nome de virose, como a raiva, a dengue hemorrágica, o sarampo, a gripe, etc. (Texto modificado do livro PIRATAS DA CÉLULA, de Andrew Scott.). De acordo com o texto, é correto afirmar:",
+        "choices": ["Os vírus utilizam o seu próprio metabolismo para destruir células, causando viroses.", "Os vírus utilizam o DNA da célula hospedeira para produzir outros vírus.", "Os vírus não têm metabolismo próprio.", "As viroses resultam sempre das modificações genéticas da célula hospedeira.","As viroses são transcrições genéticas induzidas pelos vírus que degeneram a cromatina na célula hospedeira."],
+        "answer": "Os vírus não têm metabolismo próprio."
+      },
+      {
+        "question": "Em 1932, o governo estadunidense de Franklin Roosevelt empreendeu um plano econômico para controlar a crise econômica iniciada com a quebra da bolsa de valores em 1929. Como esse plano ficou conhecido e qual sua principal característica ?",
+        "choices": ["New Deal, propôs a intervenção do Estado na economia.", "Plano Marshall, desenvolveu a economia investindo na recuperação europeia pós-Primeira Guerra.", "Doutrina Monroe, expandiu o mercado para a América Latina.", "Doutrina Truman, evitou a expansão do comunismo.", "Macartismo, promoveu uma reforma política no país."],
+        "answer": "New Deal, propôs a intervenção do Estado na economia."
+      },
+      {
+        "question": "A razão pela qual existe um número tão elevado de compostos de carbono é:",
+        "choices": ["O carbono reage vigorosamente com muitos elementos.", "O átomo de carbono tem uma valência variável.", "Os átomos de carbono podem unir-se formando cadeias.", "Os átomos de carbono formam ligações iônicas facilmente."],
+        "answer": "Os átomos de carbono podem unir-se formando cadeias."
+      },
+      {
+        "question": "“Sua popularidade deve-se ao caráter original, paradoxal, até mesmo chocante, da sua linguagem, tecida de vocábulos esdrúxulos e animada de uma virulência pessimista sem igual em nossas letras. Trata-se de um poeta poderoso, que deve ser mensurado por um critério estético extremamente aberto que possa reconhecer, além do “mau gosto” do vocabulário rebuscado e científico, a dimensão cósmica e a angústia moral da sua poesia. (Alfredo Bosi, em História concisa da literatura brasileira). O trecho acima se refere a(à):",
+        "choices": ["Cruz e Sousa.", "Alphonsus de Guimaraens.", "Augusto dos Anjos.", "Cecília Meireles.", "Gregório de Matos."],
+        "answer": "Augusto dos Anjos."
       }
     ]
   }
