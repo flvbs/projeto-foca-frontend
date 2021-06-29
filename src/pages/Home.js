@@ -44,10 +44,12 @@ const useStyles = makeStyles((theme) => ({
       background: "#552583",
     },
     buttonLogin: {
-      background: '#fdb927'
+      background: '#fdb927',
+      fontWeight: 'bold',
     },
     buttonCadastro: {
-      background: '#fff'
+      background: '#fff',
+      fontWeight: 'bold',
     },
 }));
 
@@ -69,12 +71,12 @@ export default function Home() {
             <div className={classes.heroButtons}>
               <Grid container spacing={10} justify="center">
                 <Grid item>
-                  <Button variant="contained" href="/login" className={classes.buttonLogin}>
+                  <Button size="large" variant="contained" href="/login" className={classes.buttonLogin}>
                     Fazer login
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="contained" href="/cadastrar" className={classes.buttonCadastro}>
+                  <Button size="large" variant="contained" href="/cadastrar" className={classes.buttonCadastro}>
                     Cadastrar
                   </Button>
                 </Grid>

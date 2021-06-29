@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/framework/Header";
 import Editor from "../components/dashboard/Editor"
 import TabelaEstudos from "../components/dashboard/TabelaEstudos";
-import BlueCard from "../components/dashboard/cards/BlueCard";
+import UserCard from "../components/dashboard/cards/UserCard";
 import ErrosAcertos from "../components/dashboard/cards/ErrosAcertos";
 
 // MaterialUI
@@ -45,44 +45,44 @@ export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
     <React.Fragment>
       <Header />
       <Container className={classes.container} component="main" maxWidth="lg">
-      <div className={classes.linha1}>
-        <div className={classes.tabelaEstudos}>
-          <BlueCard/>
+        <div className={classes.linha1}>
+          <div className={classes.tabelaEstudos}>
+            <UserCard />
+          </div>
+          <ErrosAcertos
+            acertos={acertos}
+            aproveitamento={aproveitamento}
+            tempo={tempo}
+          />
         </div>
-        <ErrosAcertos 
-        acertos={acertos}
-        aproveitamento={aproveitamento}
-        tempo={tempo}
-        />
-      </div>
-      <Typography className={classes.titulo}
-                    component="p"
-                    variant="h4"
-                    align="left"
-                >
-                    Seu plano de estudos
-                </Typography>
+        <Typography className={classes.titulo}
+          component="p"
+          variant="h4"
+          align="left"
+        >
+          Seu plano de estudos
+        </Typography>
         <div className={classes.linha2}>
           <div className={classes.tabelaEstudos}>
-          <Typography className={classes.titulo2}
-                    component="h4"
-                    variant="h5"
-                    align="left"
-                >
-                    O que estudar:
-                </Typography>
-            <TabelaEstudos/>
+            <Typography className={classes.titulo2}
+              component="h4"
+              variant="h5"
+              align="left"
+            >
+              O que estudar:
+            </Typography>
+            <TabelaEstudos />
           </div>
           <div>
-          <Typography className={classes.titulo2}
-                    component="h4"
-                    variant="h5"
-                    align="left"
-                >
-                    Anotações:
-                </Typography>
+            <Typography className={classes.titulo2}
+              component="h4"
+              variant="h5"
+              align="left"
+            >
+              Anotações:
+            </Typography>
             <div className={classes.editor}>
-              <Editor/>
+              <Editor />
             </div>
           </div>
         </div>
