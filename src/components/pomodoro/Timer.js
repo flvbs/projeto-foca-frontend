@@ -30,7 +30,7 @@ class Timer extends Component {
         <div className="timer__reset">
           <button
             className="timer__reset-btn"
-            title="Click to reset the timer"
+            title="Reiniciar contador"
             onClick={() => resetTimer()}
           />
         </div>

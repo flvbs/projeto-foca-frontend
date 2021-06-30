@@ -30,7 +30,7 @@ html {
 }
 @media screen and (min-width: 1400px) {
   .current-task__countdown {
-    font-size: 4rem;
+    font-size: 6rem;
  }
 }
 .current-task__tomatos {
@@ -43,7 +43,7 @@ html {
 /* --------------------------------- Component Timer --------------------------------- */
 .timer {
   width: 100%;
-  margin-top: 20%;
+  margin-top: 16%;
   margin-left: 1.5rem;
   display: flex;
   flex-direction: row;
@@ -54,7 +54,7 @@ html {
   height: 4.5%;
 }
 .timer__reset-btn {
-  width: 100%;
+  width: 20%;
   height: 100%;
   transform: rotate(0);
   background-color: #552583;

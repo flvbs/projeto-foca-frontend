@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/framework/Header";
-import Editor from "../components/dashboard/Editor"
 import TabelaEstudos from "../components/dashboard/TabelaEstudos";
 import UserCard from "../components/dashboard/cards/UserCard";
 import ErrosAcertos from "../components/dashboard/cards/ErrosAcertos";
@@ -9,15 +8,11 @@ import PieChart from "../components/charts/PieChart";
 import LineChart from "../components/charts/LineChart";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    marginTop: theme.spacing(2),
-  },
   titulo: {
     color: '#552583',
     fontWeight: 'bold',
@@ -67,7 +62,6 @@ export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
   return (
     <React.Fragment>
       <Header />
-      <Container className={classes.container} component="main" maxWidth="lg"> 
         <Grid container spacing={3} className={classes.linha1}>
           <Grid item xs={3}>
             <Paper className={classes.user}>
@@ -84,7 +78,6 @@ export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
             </Paper>
           </Grid>
         </Grid>
-
         <Grid container spacing={3}>
           <Grid item xs={3}>
             <Paper className={classes.paper}>
@@ -113,7 +106,6 @@ export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
             </Paper>
           </Grid>
         </Grid>
-      </Container>
     </React.Fragment>
   );
 };
