@@ -84,7 +84,7 @@ return (
                   <Button
                     disableElevation
                     variant="contained"
-                    color="primary"
+                    style={{ background: '#3298dc', color: '#fff', fontWeight: 'bold', }}
                     onClick={handleNext}
                     className={classes.button}
                   >
@@ -97,7 +97,7 @@ return (
         ))}
       </Stepper>
       {activeStep === steps.length && (
-        <Paper square elevation={0} className={classes.resetContainer}>
+        <Paper square elevation={2} className={classes.resetContainer}>
           <Typography>Muito bom! Ciclo finalizado.</Typography>
           <Button onClick={handleReset} className={classes.button}>
             Refazer

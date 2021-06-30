@@ -44,10 +44,10 @@ export const Estudar = ({ aproveitamento, acertos, tempo }) => {
       <Grid container spacing={3} className={classes.linha1}>
           <Grid item xs={12}>
             <Paper className={classes.estudar}>
-              <h2>Estudar</h2>
+              <h2>Bora estudar?</h2>
               <p  className={classes.texto}>O FOCA preparou e organizou seu plano de esudos a partir da análise dos seu desempenho. Você não precisa se preocupar com
-                  o que estudar, quando estudar ou como estudar. Nosso sistema utiliza uma combinação de técnicas - o pomodoro, a repetição espaçada e
-                  o ciclo de estudos - para te ajudar a ter o melhor aproveitamento das suas horas estudadas. </p>
+                  o que estudar, quando estudar ou como estudar. Nosso sistema utiliza técnicas de estudos, como o pomodoro e o ciclo de estudos, 
+                  para criar o seu plano de estudos personalizado e te ajudar a ter o melhor aproveitamento das suas horas estudadas. </p>
             <Button href="/foca" className={classes.buttonTeste}>
                 Teste de nivelamento
             </Button>

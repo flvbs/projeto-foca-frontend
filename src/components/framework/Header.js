@@ -24,6 +24,7 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import MenuItems from './MenuItems'
+import Foca from '../../assets/foca-logo_yellow.png';
 
 const drawerWidth = 240;
 
@@ -84,8 +85,11 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
   foca: {
-    marginRight: theme.spacing(4),
+    marginRight: theme.spacing(2),
   },
+  logo: {
+    width: 40,
+  }
 }));
 
 export default function PersistentDrawerLeft() {
@@ -126,8 +130,12 @@ export default function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          
-          </Grid>
+          </Grid> 
+          <img
+                className={classes.logo}
+                src={Foca}
+                alt="logo"
+              />     
           <Typography variant="h6" className={classes.foca} >
             <Link href="#" style={{ textDecoration:'none', color:'#fff' }}>FOCA</Link>
           </Typography>

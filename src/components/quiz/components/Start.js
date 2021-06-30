@@ -28,12 +28,13 @@ const Start = ({ onQuizStart }) => {
       <Card>
         <CardContent>
           <Typography align="justify" className={classes.texto}>
-            O teste de nivelamento é individual, portanto, é importante que você realize sozinho,
+            O teste de nivelamento é individual, portanto, é importante que faça o teste sozinho(a),
             para que os resultados sejam o mais verdadeiro possível. As questões são de mútipla escolha, 
             só há uma alternativa correta.
           </Typography>
         <div className={classes.card}>
-            <Button disableElevation variant="contained" color="primary" onClick={onQuizStart}>Começar</Button>
+            <Button disableElevation variant="contained" style={{ background: '#3298dc', color: '#fff', fontWeight: 'bold', }}
+            onClick={onQuizStart}>Começar</Button>
         </div>
         </CardContent>
     </Card>

@@ -109,7 +109,7 @@ export default function MenuItems() {
     <div className={classes.grow}>
          <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 5 new notifications" color="inherit">
-              <Badge badgeContent={5} color="secondary">
+              <Badge badgeContent={0} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>

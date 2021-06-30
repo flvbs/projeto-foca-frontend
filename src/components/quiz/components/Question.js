@@ -49,7 +49,11 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
             ))}
           </div>
           {error && <div className="has-text-danger">{error}</div>}
-          <Button disableElevation variant="contained" color="primary" onClick={nextClickHandler}>
+          <Button 
+          disableElevation 
+          variant="contained" 
+          style={{ background: '#3298dc', color: '#fff', fontWeight: 'bold', marginLeft: 550 }} 
+          onClick={nextClickHandler}>
           {activeQuestion >= numberOfQuestions - 1 ? 'Finalizar teste': 'Próximo'}</Button>
         </div>
       </CardContent>

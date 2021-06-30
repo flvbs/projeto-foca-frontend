@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(2, 0, 2),
+    background: '#3298dc', color: '#fff', fontWeight: 'bold',
   },
 }));
 
@@ -105,7 +106,6 @@ export default function SignInSide() {
               //type="submit"
               fullWidth
               variant="contained"
-              color="primary"
               className={classes.submit}
               href="/inicial"
             >
