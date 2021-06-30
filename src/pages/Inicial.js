@@ -7,7 +7,6 @@ import LineChart from "../components/charts/LineChart";
 import PolarAreaChart from "../components/charts/PolarAreaChart";
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
 
-
 // MaterialUI
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
