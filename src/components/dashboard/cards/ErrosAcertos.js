@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Paper from '@material-ui/core/Paper';
+import Grid from "@material-ui/core/Grid";
+import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
+import TimerIcon from '@material-ui/icons/Timer';
 
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -23,13 +24,13 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       flexDirection: "row",
       justifyContent: 'space-around',
-      marginTop: 30,
+      fontWeight: 'bold',
     },
     errAce: {
-      minWidth: 200,
       display: "flex",
       flexDirection: "row",
       justifyContent: 'space-around',
+      padding: 0.5,
       alignItems: "center",
       color: "#fff",
       fontSize: 25,
@@ -48,35 +49,27 @@ const ErrosAcertos = ({ aproveitamento, acertos, tempo }) => {
 
   return (
     <>
-     <Card>
-      <CardContent style={{backgroundColor: "#fff"}}>
-
-        <div className={classes.tabela}>
-          <h3 className="bd-highlight w-100 font-weight-bold">Seu desempenho 📈</h3>
-        </div>
-        <hr />
+        <h2>Seus resultados</h2>
         <div className={classes.errosAcertos}>
-          <Paper elevation={0} className={classes.paper}>
-            <h3>APROVEITAMENTO</h3>
-            <div className={classes.errAce} style={{ backgroundColor: '#211f20' }}>
+          <Grid item xs={4}>
+            <div className={classes.errAce} style={{ backgroundColor: '#9966ff' }}>
+              <EmojiEventsIcon style={{ fontSize: 50 }}/>
               <h2 className="bd-highlight w-100 font-weight-bold">{aproveitamento}%</h2>
             </div>
-          </Paper>
-          <Paper elevation={0} className={classes.paper}>
-            <h3>ACERTOS</h3>
-            <div className={classes.errAce} style={{ backgroundColor: '#ffb20a' }}>
+          </Grid>
+          <Grid item xs={4}>
+            <div className={classes.errAce} style={{ backgroundColor: '#48c774' }}>
+              <CheckCircleIcon style={{ fontSize: 50 }}/>
               <h2 className="bd-highlight w-100 font-weight-bold">{acertos}</h2>
             </div>
-          </Paper>
-          <Paper elevation={0} className={classes.paper}>
-            <h3>TEMPO DE PROVA</h3>
-            <div className={classes.errAce} style={{ backgroundColor: '#d3d3d5', color: "#222", }}>
+          </Grid>
+          <Grid item xs={4}>
+            <div className={classes.errAce} style={{ backgroundColor: '#3273dc' }}>
+              <TimerIcon style={{ fontSize: 50 }}/>
               <h2 className="bd-highlight w-100 font-weight-bold">{tempo}</h2> 
             </div>
-          </Paper>
+          </Grid>
         </div>
-      </CardContent>
-    </Card>
     </>
   );
 }

@@ -4,15 +4,21 @@ import Editor from "../components/dashboard/Editor"
 import TabelaEstudos from "../components/dashboard/TabelaEstudos";
 import UserCard from "../components/dashboard/cards/UserCard";
 import ErrosAcertos from "../components/dashboard/cards/ErrosAcertos";
-
-// MaterialUI
+import BarChart from "../components/charts/BarChart";
+import PieChart from "../components/charts/PieChart";
+import LineChart from "../components/charts/LineChart";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    marginTop: theme.spacing(2),
+  },
   titulo: {
-    marginTop: theme.spacing(8),
     color: '#552583',
     fontWeight: 'bold',
   },
@@ -20,9 +26,15 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   linha1: {
-    marginTop: theme.spacing(6),
-    display: "flex",
-    flexDirection: "row",
+    marginBottom: theme.spacing(3),
+  },
+  paper: {
+    padding: 30,
+  },
+  Results: {
+    textAlign: "center",
+    padding: 12,
+    paddingBottom: 30,
   },
   linha2: {
     marginTop: theme.spacing(6),
@@ -37,6 +49,17 @@ const useStyles = makeStyles((theme) => ({
   editor: {
     backgroundColor: "white"
   },
+  texto: {
+    textAlign: 'justify',
+    fontSize: 16,
+  },
+  buttonEstudar: {
+    background: '#3298dc',
+    color: '#fff',
+    fontWeight: 'bold',
+    marginTop: 16,
+    marginLeft: 150,
+  },
 }));
 
 export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
@@ -44,48 +67,52 @@ export const PlanoEstudo = ({ aproveitamento, acertos, tempo }) => {
   return (
     <React.Fragment>
       <Header />
-      <Container className={classes.container} component="main" maxWidth="lg">
-        <div className={classes.linha1}>
-          <div className={classes.tabelaEstudos}>
-            <UserCard />
-          </div>
-          <ErrosAcertos
+      <Container className={classes.container} component="main" maxWidth="lg"> 
+        <Grid container spacing={3} className={classes.linha1}>
+          <Grid item xs={3}>
+            <Paper className={classes.user}>
+              <UserCard/>
+            </Paper>
+          </Grid>
+          <Grid item xs={9}>
+            <Paper className={classes.Results}>
+              <ErrosAcertos
             acertos={acertos}
             aproveitamento={aproveitamento}
             tempo={tempo}
           />
-        </div>
-        <Typography className={classes.titulo}
-          component="p"
-          variant="h4"
-          align="left"
-        >
-          Seu plano de estudos
-        </Typography>
-        <div className={classes.linha2}>
-          <div className={classes.tabelaEstudos}>
-            <Typography className={classes.titulo2}
-              component="h4"
-              variant="h5"
-              align="left"
-            >
-              O que estudar:
-            </Typography>
-            <TabelaEstudos />
-          </div>
-          <div>
-            <Typography className={classes.titulo2}
-              component="h4"
-              variant="h5"
-              align="left"
-            >
-              Anotações:
-            </Typography>
-            <div className={classes.editor}>
-              <Editor />
-            </div>
-          </div>
-        </div>
+            </Paper>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={3}>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>
+              <PieChart />
+            </Paper>
+          </Grid>
+          <Grid item xs={4}>
+            <Paper className={classes.paper}>
+              <BarChart />
+            </Paper>
+          </Grid>
+          <Grid item xs={5}>
+            <Paper className={classes.paper}>
+              <h2>O que estudar:</h2>
+              <p className={classes.texto}>Baseado nos seus resultados essas são as disciplinas que você deria focar.</p>
+              <TabelaEstudos />
+              <Button size="medium" disableElevation variant="contained" href="/estudar" className={classes.buttonEstudar}>
+                Estudar
+              </Button>
+            </Paper>
+          </Grid>
+          <Grid item xs={12}>
+            <Paper className={classes.paper}>
+              <h2>Sua evolução</h2>
+              <LineChart />
+            </Paper>
+          </Grid>
+        </Grid>
       </Container>
     </React.Fragment>
   );

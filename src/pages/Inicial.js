@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/framework/Header";
 import UserCard from "../components/dashboard/cards/UserCard";
-import BarChart from "../components/charts/BarChart";
-import PieChart from "../components/charts/PieChart";
-import LineChart from "../components/charts/LineChart";
-import PolarAreaChart from "../components/charts/PolarAreaChart";
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
 
 // MaterialUI
@@ -38,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export const PlanoEstudo = () => {
+export const Inicial = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -58,32 +54,9 @@ export const PlanoEstudo = () => {
             </Paper>
           </Grid>
         </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>
-              <PieChart />
-            </Paper>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>
-              <BarChart />
-            </Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>
-              <PolarAreaChart />
-            </Paper>
-          </Grid>
-          <Grid item xs={12}>
-            <Paper className={classes.paper}>
-              <h2>Sua evolução</h2>
-              <LineChart />
-            </Paper>
-          </Grid>
-        </Grid>
       </Container>
     </React.Fragment>
   );
 };
 
-export default PlanoEstudo;
+export default Inicial;

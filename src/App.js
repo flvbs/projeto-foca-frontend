@@ -8,6 +8,7 @@ import Cadastrar from "./pages/Cadastrar"
 import Home from "./pages/Home"
 import IniciarQuiz from './pages/IniciarQuiz'
 import Inicial from './pages/Inicial'
+import Estudar from './pages/Estudar'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
 
@@ -50,6 +51,7 @@ function App() {
         <Route path="/r/:topic" component={RandomQuiz} exact/>
         <Route path="/foca" component={IniciarQuiz} exact/>
         <Route path="/inicial" component={Inicial} exact/>
+        <Route path="/estudar" component={Estudar} exact/>
         <Route component={NoMatch} />
       </Switch>
     </Router>
